@@ -15,6 +15,8 @@
 		3D4975E72551F2A100BED9BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4975E52551F2A100BED9BA /* LaunchScreen.storyboard */; };
 		3D4975F22551F2A100BED9BA /* PracticaTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4975F12551F2A100BED9BA /* PracticaTableViewTests.swift */; };
 		3D4975FD2551F2A100BED9BA /* PracticaTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4975FC2551F2A100BED9BA /* PracticaTableViewUITests.swift */; };
+		3D49760F2551F89E00BED9BA /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49760E2551F89E00BED9BA /* Alumno.swift */; };
+		3D497611255204F400BED9BA /* celdaAlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D497610255204F400BED9BA /* celdaAlumnoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3D4975F82551F2A100BED9BA /* PracticaTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticaTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4975FC2551F2A100BED9BA /* PracticaTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaTableViewUITests.swift; sourceTree = "<group>"; };
 		3D4975FE2551F2A100BED9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D49760E2551F89E00BED9BA /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
+		3D497610255204F400BED9BA /* celdaAlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celdaAlumnoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,12 @@
 		3D4975D92551F2A000BED9BA /* PracticaTableView */ = {
 			isa = PBXGroup;
 			children = (
-				3D4975DA2551F2A000BED9BA /* AppDelegate.swift */,
+				3D49760D2551F82300BED9BA /* Models */,
+				3D49760C2551F7F900BED9BA /* Controllers */,
+				3D49760B2551F79100BED9BA /* Storyboard */,
 				3D4975DC2551F2A000BED9BA /* SceneDelegate.swift */,
-				3D4975DE2551F2A000BED9BA /* ViewController.swift */,
-				3D4975E02551F2A000BED9BA /* Main.storyboard */,
+				3D4975DA2551F2A000BED9BA /* AppDelegate.swift */,
 				3D4975E32551F2A100BED9BA /* Assets.xcassets */,
-				3D4975E52551F2A100BED9BA /* LaunchScreen.storyboard */,
 				3D4975E82551F2A100BED9BA /* Info.plist */,
 			);
 			path = PracticaTableView;
@@ -126,6 +130,32 @@
 				3D4975FE2551F2A100BED9BA /* Info.plist */,
 			);
 			path = PracticaTableViewUITests;
+			sourceTree = "<group>";
+		};
+		3D49760B2551F79100BED9BA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3D4975E52551F2A100BED9BA /* LaunchScreen.storyboard */,
+				3D4975E02551F2A000BED9BA /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		3D49760C2551F7F900BED9BA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D4975DE2551F2A000BED9BA /* ViewController.swift */,
+				3D497610255204F400BED9BA /* celdaAlumnoController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3D49760D2551F82300BED9BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D49760E2551F89E00BED9BA /* Alumno.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D497611255204F400BED9BA /* celdaAlumnoController.swift in Sources */,
 				3D4975DF2551F2A000BED9BA /* ViewController.swift in Sources */,
 				3D4975DB2551F2A000BED9BA /* AppDelegate.swift in Sources */,
 				3D4975DD2551F2A000BED9BA /* SceneDelegate.swift in Sources */,
+				3D49760F2551F89E00BED9BA /* Alumno.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
